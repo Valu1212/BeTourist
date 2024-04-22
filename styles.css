@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    z-index: 999;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+}
+
+header .barra{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .navegacion{
+    position: relative;
+}
+
+.menu1{
+    background:url() no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+
+
+header .navegacion .navegacion-items a{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+
+}
+
+
+header .navegacion .navegacion-items a:before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;   
+    transition: 0.3s ease;
+}
+
+
+header .navegacion .navegacion-items a:hover:before{
+width: 100%;
+}
+
+
+section{
+    padding: 100px 200px;
+}
+
+.Inicio{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #2696E9;
+}
+
+.Inicio:before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    background: rgba(3, 96, 251, 0.3);
+    width: 130%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+}
+
+.Inicio .contenido{
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.Inicio .contenido h1{
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+    
+}    
+
+.Inicio .contenido h1 span{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.Inicio .contenido p{
+    margin-bottom: 65px;
+}
+
+.Inicio .contenido a{
+    background: #fff;
+    padding: 15px 35px;
+    color: #1680AB;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+
+.Inicio .iconos-medio{
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+
+
+.Inicio .iconos-medio a{
+    color: #fff;
+    font-size: 1.6em;
+}
+
+
+.Inicio .iconos-medio a{
+    color: #fff;
+    font-size: 1.6em;
+}
+
+
+.Inicio .iconos-medio a:not(:last-child){
+    margin-bottom: 20px;
+}
+
+
+.Inicio .iconos-medio a:hover{
+ transform: scale(1.3);
+}
+
+.Inicio .video-slider{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.slider-navegacion{
+    z-index: 888;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-bottom: 12px;
+}
+
+.slider-navegacion .nav-btn{
+    width:  12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0,5);
+    transition: 0.3s ease;
+}
+
+.slider-navegacion .nav-btn:not(:last-child){
+     margin-right: 20px;
+}
+
+.slider-navegacion .nav-btn:hover{
+    transform: scale(1.2);
+}
+
+.video-slider{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.slider-frame{
+    width: 700px;
+    margin: 50px auto 0;
+    overflow: hidden;
+  
+}
+
+.slider-frame ul{
+    display: flex;
+    padding: 0%;
+    width: 400%;
+    animation: slide 24s infinite alternate ease-in-out;
+}
+
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img{
+    width: 100%;
+}
+
+.Titulo{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5em;
+    color: #fff;
+    
+}
+
+.texto{
+    margin-top: 50px;
+    color: #fff;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+footer{
+    width: 100%;
+    margin-top: auto;
+}
+
+.pie {
+    background-color: #ffffff;
+    padding-top: 0%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+span {
+    font-size: 25px;
+}
+
+
+.fb,
+.tw,
+.ig{
+    background: #1680ab;
+    padding: 8px;
+    border-radius: 50px;
+    color: #1680ab;
+}
+
+
+.header3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+
+.logotipo {
+    font-size: 20px;
+}
+
+
+.Footerr {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px; 
+    color: #1680ab;
+}
+
+
+.Footerr div {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+}
+
+div h2 {
+    color: #1680ab;
+    padding: 10px 0;
+}
+
+.derechos {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #dccbed;
+}
+
+form {
+    gap: 10px;
+}
+
+.suscribir {
+    gap: 10px;
+}
+
+input {
+    background: none;
+    border: solid 2px white;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+
+
+
+@keyframes slide{
+    0%{margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    95% {margin-left: -300%;}
+}
+
+
+
+
+@media (max-width:768px){
+
+    header {
+        padding: 12px 20px;
+    }
+
+    section {
+        padding: 100px 20px;
+    }
+
+
+    .Inicio .iconos-medio { 
+        right: 15px;
+    }
+
+    header .navegacion {
+        display: none;
+    }
+
+    footer{
+        padding: 12px 27px;
+    
+    }
+}
+
+
+
